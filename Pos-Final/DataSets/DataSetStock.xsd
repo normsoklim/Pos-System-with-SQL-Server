@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetStock" targetNamespace="http://tempuri.org/DataSetStock.xsd" xmlns:mstns="http://tempuri.org/DataSetStock.xsd" xmlns="http://tempuri.org/DataSetStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="POS_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="POS_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Pos_Final.Properties.Settings.GlobalReference.Default.POS_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_AddStockTableAdapter" GeneratorDataComponentClassName="View_AddStockTableAdapter" Name="View_AddStock" UserDataComponentName="View_AddStockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="POS_DBConnectionString (Settings)" DbObjectName="POS_DB.dbo.View_AddStock" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from View_AddStock</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="SupplierName" DataSetColumn="SupplierName" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="CreateBy" DataSetColumn="CreateBy" />
+              <Mapping SourceColumn="CreateAt" DataSetColumn="CreateAt" />
+              <Mapping SourceColumn="UpdateBy" DataSetColumn="UpdateBy" />
+              <Mapping SourceColumn="UpdateAt" DataSetColumn="UpdateAt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetStock" msprop:Generator_DataSetName="DataSetStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_AddStock" msprop:Generator_RowEvHandlerName="View_AddStockRowChangeEventHandler" msprop:Generator_RowDeletedName="View_AddStockRowDeleted" msprop:Generator_RowDeletingName="View_AddStockRowDeleting" msprop:Generator_RowEvArgName="View_AddStockRowChangeEvent" msprop:Generator_TablePropName="View_AddStock" msprop:Generator_RowChangedName="View_AddStockRowChanged" msprop:Generator_RowChangingName="View_AddStockRowChanging" msprop:Generator_TableClassName="View_AddStockDataTable" msprop:Generator_RowClassName="View_AddStockRow" msprop:Generator_TableVarName="tableView_AddStock" msprop:Generator_UserTableName="View_AddStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="SupplierName" msprop:Generator_ColumnPropNameInRow="SupplierName" msprop:Generator_ColumnPropNameInTable="SupplierNameColumn" msprop:Generator_ColumnVarNameInTable="columnSupplierName" msprop:Generator_UserColumnName="SupplierName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_UserColumnName="Qty" type="xs:int" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_UserColumnName="Price" type="xs:double" />
+              <xs:element name="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_UserColumnName="Amount" type="xs:double" />
+              <xs:element name="CreateBy" msprop:Generator_ColumnPropNameInRow="CreateBy" msprop:Generator_ColumnPropNameInTable="CreateByColumn" msprop:Generator_ColumnVarNameInTable="columnCreateBy" msprop:Generator_UserColumnName="CreateBy" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateAt" msprop:Generator_ColumnPropNameInRow="CreateAt" msprop:Generator_ColumnPropNameInTable="CreateAtColumn" msprop:Generator_ColumnVarNameInTable="columnCreateAt" msprop:Generator_UserColumnName="CreateAt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateBy" msprop:Generator_ColumnPropNameInRow="UpdateBy" msprop:Generator_ColumnPropNameInTable="UpdateByColumn" msprop:Generator_ColumnVarNameInTable="columnUpdateBy" msprop:Generator_UserColumnName="UpdateBy" type="xs:int" minOccurs="0" />
+              <xs:element name="UpdateAt" msprop:Generator_ColumnPropNameInRow="UpdateAt" msprop:Generator_ColumnPropNameInTable="UpdateAtColumn" msprop:Generator_ColumnVarNameInTable="columnUpdateAt" msprop:Generator_UserColumnName="UpdateAt" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_AddStock" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
